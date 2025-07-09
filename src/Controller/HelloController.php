@@ -13,9 +13,15 @@ class HelloController
         return new Response('Fala, meu povo!');
     }
 
-     #[Route('/marsupial')]
+    #[Route('/marsupial')]
     public function marsupial(): Response
     {
         return new Response('Meu Marsupial favorito!');
+    }
+
+    #[Route('/blacum')]
+    public function blacum(): Response
+    {
+        return new Response('Tu num blacumeja!');
     }
 }
